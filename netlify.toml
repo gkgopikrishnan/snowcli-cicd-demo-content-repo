@@ -1,0 +1,4 @@
+[build]
+  base = "data-engineering-docs-site"
+  command = "npm run build"
+  publish = "build"
