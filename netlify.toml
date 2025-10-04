@@ -1,4 +1,4 @@
 [build]
-  base = "snowcli-cicd-demo-content"
+  base = ""
   command = "npm install && npm run build"
   publish = "build"
