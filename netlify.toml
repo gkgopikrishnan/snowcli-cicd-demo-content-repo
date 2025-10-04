@@ -1,4 +1,4 @@
 [build]
-  base = "data-engineering-docs-site"
+  base = "docs/snowflake-training"
   command = "npm run build"
   publish = "build"
