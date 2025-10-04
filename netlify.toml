@@ -1,4 +1,4 @@
 [build]
-  base = "docs/snowflake-training"
+  base = "snowcli-cicd-demo-content"
   command = "npm install && npm run build"
   publish = "build"
