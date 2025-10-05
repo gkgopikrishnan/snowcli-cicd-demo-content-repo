@@ -76,13 +76,29 @@ const config = {
         src: 'img/image.png',
       },
       items: [
+    {
+      type: 'docSidebar',
+      sidebarId: 'tutorialSidebar',
+      position: 'left',
+      label: 'Webinar Topics Covered',
+      to: '/docs/intro',
+    },
+    {
+      label: 'Videos',
+      position: 'left',
+      items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
-          to: '/docs/intro',
+          label: 'Set up SnowCLI in local',
+          href: 'https://youtu.be/1GEdOGOlWI8?si=RY2LUteYQJzJ-0SY',
         },
+        // You can add more videos here
+      ],
+    },
+    {
+      label: 'GitHub Repo',
+      href: 'https://github.com/gkgopikrishnan/devops-cicd-demo-repo',
+      position: 'left',
+    },
         // {to: '/blog', label: 'Blog', position: 'left'},
         // {
         //   href: 'https://github.com/facebook/docusaurus',
