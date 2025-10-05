@@ -26,7 +26,7 @@ export default function Home() {
       setLoading(false);
     }
 
-    checkAuth();
+    // checkAuth();
   }, [history]);
 
   return <p>{loading ? 'Checking authentication...' : 'Redirecting...'}</p>;
