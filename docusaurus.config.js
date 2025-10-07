@@ -14,9 +14,6 @@ const config = {
   url: 'https://celebrated-faun-5a3353.netlify.app',
   baseUrl: '/',
 
-  organizationName: 'facebook',
-  projectName: 'docusaurus',
-
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
@@ -57,7 +54,7 @@ const config = {
   ],
 
   themeConfig: {
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/beems-social-card.jpeg',
     navbar: {
       title: 'Beems Technologies',
       logo: {
