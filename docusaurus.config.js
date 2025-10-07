@@ -7,7 +7,7 @@ const isProduction = process.env.NODE_ENV === 'production';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Data Engineering with Snowflake, DBT',
+  title: 'Setting up CI/CD Workflows for Snowflake',
   tagline: '',
   favicon: 'img/favicon.ico',
 
@@ -53,8 +53,8 @@ const config = {
     path.resolve(__dirname, 'plugins/webpack-aliases.js'),
   ],
 
-  themeConfig: {
-    image: 'img/beems-social-card.jpeg',
+  themeConfig: { 
+    image: 'img/beems-social-card.jpg',
     navbar: {
       title: 'Beems Technologies',
       logo: {
