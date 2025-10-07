@@ -94,7 +94,7 @@ const config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Beems Technologies.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Beems Technologies`,
     } ,
     prism: {
       theme: prismThemes.github,
