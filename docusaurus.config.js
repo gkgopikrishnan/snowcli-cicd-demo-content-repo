@@ -40,21 +40,10 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: 'docs',
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          //editUrl:
+          //  'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -76,82 +65,40 @@ const config = {
         src: 'img/image.png',
       },
       items: [
-    {
-      type: 'docSidebar',
-      sidebarId: 'tutorialSidebar',
-      position: 'left',
-      label: 'Webinar Topics Covered',
-      to: '/docs/intro',
-    },
-    {
-      label: 'Videos',
-      position: 'left',
-      items: [
         {
-          label: 'Set up SnowCLI in local',
-          href: 'https://youtu.be/1GEdOGOlWI8?si=RY2LUteYQJzJ-0SY',
+          type: 'docSidebar',
+          sidebarId: 'tutorialSidebar',
+          position: 'left',
+          label: 'Webinar Topics',
+          to: '/docs',
         },
-        // You can add more videos here
-      ],
-    },
     {
       label: 'GitHub Repo',
-      href: 'https://github.com/gkgopikrishnan/devops-cicd-demo-repo',
+      href: 'https://github.com/beemstec/cicd-with-snowcli-demo',
       position: 'left',
     },
-        // {to: '/blog', label: 'Blog', position: 'left'},
-        // {
-        //   href: 'https://github.com/facebook/docusaurus',
-        //   label: 'GitHub',
-        //   position: 'right',
-        // },
+
       ],
     },
     footer: {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Contact',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: '📞 (+91) 91769 04546',
+              href: 'tel:(+91) 91769 04546',
+            },
+            {
+              label: '✉️ contact@beems.in',
+              href: 'mailto:contact@beems.in',
             },
           ],
         },
-        // {
-        //   title: 'Community',
-        //   items: [
-        //     {
-        //       label: 'Stack Overflow',
-        //       href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-        //     },
-        //     {
-        //       label: 'Discord',
-        //       href: 'https://discordapp.com/invite/docusaurus',
-        //     },
-        //     {
-        //       label: 'X',
-        //       href: 'https://x.com/docusaurus',
-        //     },
-        //   ],
-        // },
-        // {
-        //   title: 'More',
-        //   items: [
-        //     {
-        //       label: 'Blog',
-        //       to: '/blog',
-        //     },
-        //     {
-        //       label: 'GitHub',
-        //       href: 'https://github.com/facebook/docusaurus',
-        //     },
-        //   ],
-        // },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Beems Technologies Pvt Ltd.`,
-    },
+      copyright: `Copyright © ${new Date().getFullYear()} Beems Technologies.`,
+    } ,
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,

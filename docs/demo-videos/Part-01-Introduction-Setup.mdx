@@ -1,0 +1,37 @@
+---
+title: 01 Introduction & Setup
+---
+
+import React from 'react';
+
+export const VideoCard = ({ href, title }) => {
+  // Ensure the YouTube link uses embed format
+  const embedHref = href.includes('watch?v=') 
+    ? href.replace('watch?v=', 'embed/').split('&')[0] 
+    : href.includes('youtu.be') 
+      ? href.replace('youtu.be/', 'www.youtube.com/embed/').split('?')[0] 
+      : href;
+
+  return (
+    <div style={{ marginBottom: '2rem', textAlign: 'center' }}>
+      <h3>{title}</h3>
+      <iframe
+        width="800"
+        height="450"
+        src={embedHref}
+        title={title}
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      />
+    </div>
+  );
+};
+
+<VideoCard
+  title="Part 01: Introduction & Setup"
+  href="https://youtu.be/TfE22MByhrc"
+/>
+
+
+
