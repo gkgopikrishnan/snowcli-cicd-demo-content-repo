@@ -1,6 +1,7 @@
 ---
 id: module-12-development-cicd-and-deployment-12-01-Deployment-and-Code-Promotion-in-Snowflake
 title: Deployment Overview
+slug: /snowflake-training/Module-12-Development-CICD-and-Deployment/12-01-Deployment-and-Code-Promotion-in-Snowflake
 ---
 
 # 🚀 1. What is Deployment?
